@@ -61,7 +61,6 @@
                 padding: 10px;
             }
         }
-
     </style>
 </head>
 
@@ -75,7 +74,7 @@
         <article id="undervisere">
             <h2>Navn: </h2>
             <h3>Efternavn: </h3>
-            <img src="" alt="">
+            <img class="pic" src="" alt="">
             <p>Religion: </p>
         </article>
 
@@ -109,6 +108,7 @@
                 klon.querySelector("h2").textContent += person.gsx$navn.$t;
                 klon.querySelector("h3").textContent += person.gsx$efternavn.$t;
                 klon.querySelector("p").textContent += person.gsx$religion.$t;
+                klon.querySelector(".pic").src = person.gsx$billede.$t;
 
 
                 // klon.querySelector("img").textContent += person.billed
@@ -119,8 +119,5 @@
             });
 
         }
-
     </script>
-</body>
-
-</html>
+</body></html>
